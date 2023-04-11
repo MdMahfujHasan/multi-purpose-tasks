@@ -1,11 +1,11 @@
-const displayOnPointerEnter = (div, paragraph, image) => {
+const displayOnPointerEnter = (div, paragraph) => {
     document.getElementById(div).addEventListener('pointerenter', function () {
-        document.getElementById(paragraph).classList.remove('hidden');
+        document.getElementById(paragraph).classList.remove('invisible');
     })
 }
 const hideOnPointerLeave = (div, paragraph) => {
     document.getElementById(div).addEventListener('pointerleave', function () {
-        document.getElementById(paragraph).classList.add('hidden');
+        document.getElementById(paragraph).classList.add('invisible');
     })
 }
 

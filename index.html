@@ -13,38 +13,46 @@
 
 <body>
     <header>
+
         <section>
-            <nav class="w-2/3 mx-auto flex justify-around items-center">
-                <div class="text-4xl font-medium">
+            <nav
+                class="w-2/3 mx-auto flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row justify-around items-center">
+                <div class="text-4xl font-medium mr-4">
                     <a href="#">LOGO</a>
                 </div>
-                <div class="text-xs font-medium">
-                    <a class="mr-8" href="#">FEATURES</a>
-                    <a class="mr-8" href="#">WORKS</a>
-                    <a class="mr-8" href="#">OUR TEAM</a>
-                    <a class="mr-8" href="#">TESTIMONIALS</a>
-                    <a class="mr-8" href="#">DOWNLOADS</a>
+                <div class="text-xs font-medium flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row">
+                    <a class="mr-8 mt-4" href="#">FEATURES</a>
+                    <a class="mr-8 mt-4" href="#">WORKS</a>
+                    <a class="mr-8 mt-4" href="#">OUR TEAM</a>
+                    <a class="mr-8 mt-4" href="#">TESTIMONIALS</a>
+                    <a class="mr-8 mt-4" href="#">DOWNLOADS</a>
                 </div>
             </nav>
             <hr class="w-3/5 mx-auto mt-4">
         </section>
-        <section class="flex flex-col justify-center items-center mt-20">
-            <h1 class="text-5xl font-bold">YOUR FAVOURITE ONE PAGE
+
+        <section class="flex flex-col justify-center items-center mt-8 sm:mt-10 md:16 lg:20">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">YOUR FAVOURITE ONE PAGE
                 <br>
                 MULTI PURPOSE TEMPLATE
             </h1>
-            <p class="font-medium text-lg mt-4 mb-10 w-1/2 text-center">Lorem ipsum dolor sit amet
+            <p class="font-medium text-sm sm:text-md md:text-lg mt-4 mb-10 w-1/2 text-center">Lorem ipsum dolor sit amet
                 consectetur
                 adipisicing elit.
                 Voluptas
                 laboriosam
                 iste quasi asperiores
                 provident modi!</p>
-            <button class="text-white text-sm bg-red-500 px-8 font-medium py-2">FIND OUT MORE</button>
+            <button class="text-white text-sm bg-red-500 px-5 sm:px-6 md:px-7 lg:px-8 font-medium py-2">FIND OUT
+                MORE</button>
         </section>
+
     </header>
+
     <main>
-        <section class="grid grid-cols-3 w-1/2 mx-auto gap-8 mt-16">
+
+        <section
+            class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 w-1/2 mx-auto gap-8 mt-16">
             <div class="flex flex-col justify-center items-center text-sm">
                 <i class="fa-solid fa-pen-ruler text-5xl text-rose-400"></i>
                 <h4 class="my-3 font-bold">RESPONSIVE READY</h4>
@@ -89,68 +97,153 @@
             </div>
         </section>
 
-        <section
-            class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-px lg:grid-cols-4 gap-12 container mx-auto mt-20">
+        <section class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-px lg:grid-cols-4 container mx-auto mt-20">
             <div id="img-1">
-                <p id="img-1-p" class="flex flex-col justify-center items-center text-center relative top-36 hidden">
+                <p id="img-1-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
                     <span class="text-sm text-white">User Interface Name</span>
                 </p>
-                <img class="h-64 w-80 saturate" src="images/books.jpg" alt="Books">
+                <img class="h-64 w-80" src="images/books.jpg" alt="Books">
             </div>
             <div id="img-2">
-                <p id="img-2-p" class="flex flex-col justify-center items-center text-center relative top-36 hidden">
+                <p id="img-2-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
                     <span class="text-sm text-white">User Interface Name</span>
                 </p>
                 <img class="h-64 w-80" src="images/burger.jpg" alt="Burger">
             </div>
             <div id="img-3">
-                <p id="img-3-p" class="flex flex-col justify-center items-center text-center relative top-36 hidden">
+                <p id="img-3-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
                     <span class="text-sm text-white">User Interface Name</span>
                 </p>
                 <img class="h-64 w-80" src="images/camera.jpg" alt="Camera">
             </div>
             <div id="img-4">
-                <p id="img-4-p" class="flex flex-col justify-center items-center text-center relative top-36 hidden">
+                <p id="img-4-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
                     <span class="text-sm text-white">User Interface Name</span>
                 </p>
                 <img class="h-64 w-80" src="images/crafts.jpg" alt="Crafts">
             </div>
             <div id="img-5">
-                <p id="img-5-p" class="flex flex-col justify-center items-center text-center relative top-36 hidden">
+                <p id="img-5-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
                     <span class="text-sm text-white">User Interface Name</span>
                 </p>
                 <img class="h-64 w-80" src="images/fruits.jpg" alt="Fruits">
             </div>
             <div id="img-6">
-                <p id="img-6-p" class="flex flex-col justify-center items-center text-center relative top-36 hidden">
+                <p id="img-6-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
                     <span class="text-sm text-white">User Interface Name</span>
                 </p>
                 <img class="h-64 w-80" src="images/shrimp.jpg" alt="Shrimp">
             </div>
             <div id="img-7">
-                <p id="img-7-p" class="flex flex-col justify-center items-center text-center relative top-36 hidden">
+                <p id="img-7-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
                     <span class="text-sm text-white">User Interface Name</span>
                 </p>
                 <img class="h-64 w-80" src="images/tools.jpg" alt="Tools">
             </div>
             <div id="img-8">
-                <p id="img-8-p" class="flex flex-col justify-center items-center text-center relative top-36 hidden">
+                <p id="img-8-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
                     <span class="text-sm text-white">User Interface Name</span>
                 </p>
                 <img class="h-64 w-80" src="images/vegetables.jpg" alt="Vegetables">
             </div>
         </section>
+
+        <section
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-1/2 gap-2 mx-auto mt-20">
+            <div>
+                <img class="h-48 w-40" src="images/client.jpg" alt="Client">
+                <h3 class="text-xl font-medium mt-4">Ruth Woods</h3>
+                <h5 class="text-red-500 text-xs font-bold mt-1 mb-4">FOUNDER, CEO</h5>
+                <p class="text-slate-500 font-medium leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas
+                    perspiciatis
+                    expedita magnam eius
+                    quasi. Commodi amet laboriosam illum aliquam officiis!</p>
+                <div class="mt-2">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f border-2 p-1.5 text-slate-500 hover:text-slate-700"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter border-2 p-1.5 text-slate-500 hover:text-slate-700"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin border-2 p-1.5 text-slate-500 hover:text-slate-700"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img class="h-48 w-40" src="images/client.jpg" alt="Client">
+                <h3 class="text-xl font-medium mt-4">Timothy Reed</h3>
+                <h5 class="text-red-500 text-xs font-bold mt-1 mb-4">CO-FOUNDER, DEVELOPER</h5>
+                <p class="text-slate-500 font-medium leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Enim distinctio reprehenderit voluptatibus
+                    itaque iste odit? Dolores accusantium.</p>
+                <div class="mt-2">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f border-2 p-1.5 text-slate-500 hover:text-slate-700"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter border-2 p-1.5 text-slate-500 hover:text-slate-700"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin border-2 p-1.5 text-slate-500 hover:text-slate-700"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img class="h-48 w-40" src="images/client.jpg" alt="Client">
+                <h3 class="text-xl font-medium mt-4">Victoria Valdez</h3>
+                <h5 class="text-red-500 text-xs font-bold mt-1 mb-4">UI DESIGNER</h5>
+                <p class="text-slate-500 font-medium leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eos distinctio quam nostrum repudiandae
+                    tenetur eaque accusamus vero, quasi minus recusandae.</p>
+                <div class="mt-2">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f border-2 p-1.5 text-slate-500 hover:text-slate-700"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter border-2 p-1.5 text-slate-500 hover:text-slate-700"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin border-2 p-1.5 text-slate-500 hover:text-slate-700"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img class="h-48 w-40" src="images/client.jpg" alt="Client">
+                <h3 class="text-xl font-medium mt-4">Beverly Little</h3>
+                <h5 class="text-red-500 text-xs font-bold mt-1 mb-4">DATA SCIENTIST</h5>
+                <p class="text-slate-500 font-medium leading-5">Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Maxime voluptas voluptatem cum facere quos
+                    veniam nulla dolore, libero magnam optio?</p>
+                <div class="mt-2">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f border-2 p-1.5 text-slate-500 hover:text-slate-700"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter border-2 p-1.5 text-slate-500 hover:text-slate-700"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin border-2 p-1.5 text-slate-500 hover:text-slate-700"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+        </section>
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/'1.6.5'/flowbite.min.js"></script>
     <script src="app.js"></script>
 </body>
 
