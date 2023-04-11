@@ -5,10 +5,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/6c0e978889.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .slideshow-container {
+            position: relative;
+            background: #f1f1f1f1;
+        }
+
+        .mySlides {
+            display: none;
+            padding: 80px;
+            text-align: center;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 16px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+            background: #ddd;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        q {
+            font-style: italic;
+        }
+
+        .author {
+            color: cornflowerblue;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,12 +109,13 @@
             <hr class="w-3/5 mx-auto mt-4">
         </section>
 
-        <section class="flex flex-col justify-center items-center mt-8 sm:mt-10 md:16 lg:20">
+        <section class="flex flex-col justify-center items-center text-center mt-8 sm:mt-10 md:16 lg:20">
             <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">YOUR FAVOURITE ONE PAGE
                 <br>
                 MULTI PURPOSE TEMPLATE
             </h1>
-            <p class="font-medium text-sm sm:text-md md:text-lg mt-4 mb-10 w-1/2 text-center">Lorem ipsum dolor sit amet
+            <p class="font-medium text-sm sm:text-md md:text-lg mt-4 mb-5 sm:mb-6 md:mb-8 lg:mb-10 w-1/2 text-center">
+                Lorem ipsum dolor sit amet
                 consectetur
                 adipisicing elit.
                 Voluptas
@@ -99,58 +178,66 @@
 
         <section class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-px lg:grid-cols-4 container mx-auto mt-20">
             <div id="img-1">
-                <p id="img-1-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
+                <p id="img-1-p"
+                    class="flex flex-col justify-center items-center text-center relative top-36 invisible bg-red-700 opacity-80">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
-                    <span class="text-sm text-white">User Interface Name</span>
+                    <span class="text-xs text-white">User Interface Name</span>
                 </p>
                 <img class="h-64 w-80" src="images/books.jpg" alt="Books">
             </div>
             <div id="img-2">
-                <p id="img-2-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
+                <p id="img-2-p"
+                    class="flex flex-col justify-center items-center text-center relative top-36 invisible bg-red-700 opacity-80">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
-                    <span class="text-sm text-white">User Interface Name</span>
+                    <span class="text-xs text-white">User Interface Name</span>
                 </p>
                 <img class="h-64 w-80" src="images/burger.jpg" alt="Burger">
             </div>
             <div id="img-3">
-                <p id="img-3-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
+                <p id="img-3-p"
+                    class="flex flex-col justify-center items-center text-center relative top-36 invisible bg-red-700 opacity-80">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
-                    <span class="text-sm text-white">User Interface Name</span>
+                    <span class="text-xs text-white">User Interface Name</span>
                 </p>
                 <img class="h-64 w-80" src="images/camera.jpg" alt="Camera">
             </div>
             <div id="img-4">
-                <p id="img-4-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
+                <p id="img-4-p"
+                    class="flex flex-col justify-center items-center text-center relative top-36 invisible bg-red-700 opacity-80">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
-                    <span class="text-sm text-white">User Interface Name</span>
+                    <span class="text-xs text-white">User Interface Name</span>
                 </p>
                 <img class="h-64 w-80" src="images/crafts.jpg" alt="Crafts">
             </div>
             <div id="img-5">
-                <p id="img-5-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
+                <p id="img-5-p"
+                    class="flex flex-col justify-center items-center text-center relative top-36 invisible bg-red-700 opacity-80">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
-                    <span class="text-sm text-white">User Interface Name</span>
+                    <span class="text-xs text-white">User Interface Name</span>
                 </p>
                 <img class="h-64 w-80" src="images/fruits.jpg" alt="Fruits">
             </div>
             <div id="img-6">
-                <p id="img-6-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
+                <p id="img-6-p"
+                    class="flex flex-col justify-center items-center text-center relative top-36 invisible bg-red-700 opacity-80">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
-                    <span class="text-sm text-white">User Interface Name</span>
+                    <span class="text-xs text-white">User Interface Name</span>
                 </p>
                 <img class="h-64 w-80" src="images/shrimp.jpg" alt="Shrimp">
             </div>
             <div id="img-7">
-                <p id="img-7-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
+                <p id="img-7-p"
+                    class="flex flex-col justify-center items-center text-center relative top-36 invisible bg-red-700 opacity-80">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
-                    <span class="text-sm text-white">User Interface Name</span>
+                    <span class="text-xs text-white">User Interface Name</span>
                 </p>
                 <img class="h-64 w-80" src="images/tools.jpg" alt="Tools">
             </div>
             <div id="img-8">
-                <p id="img-8-p" class="flex flex-col justify-center items-center text-center relative top-36 invisible">
+                <p id="img-8-p"
+                    class="flex flex-col justify-center items-center text-center relative top-36 invisible bg-red-700 opacity-80">
                     <span class="font-bold text-sm text-white">PROJECT NAME</span>
-                    <span class="text-sm text-white">User Interface Name</span>
+                    <span class="text-xs text-white">User Interface Name</span>
                 </p>
                 <img class="h-64 w-80" src="images/vegetables.jpg" alt="Vegetables">
             </div>
@@ -238,11 +325,88 @@
             </div>
         </section>
 
-        <section>
+        <section class="mt-20 container mx-auto flex flex-col sm:flex-col md:flex-col lg:flex-row mb-8">
+            <div>
+                <img width="600px" class="h-72" src="images/client-meeting.jpg" alt="Client Meeting">
+            </div>
+            <div>
+                <div class="slideshow-container">
 
+                    <div class="mySlides">
+                        <q>I love you the more in that I believe you had liked me for my own sake and for nothing
+                            else</q>
+                        <p class="author">- John Keats</p>
+                    </div>
+
+                    <div class="mySlides">
+                        <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                        <p class="author">- Ernest Hemingway</p>
+                    </div>
+
+                    <div class="mySlides">
+                        <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                        <p class="author">- Thomas A. Edison</p>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="felx flex-col justify-center items-center text-center mt-20">
+            <h2 class="text-xl">Are You Ready to Start? Download Now for Free!</h2>
+            <p class="text-sm mt-1 mb-5">Lorem ipsum dolor sit amet.</p>
+            <button class="text-white text-sm bg-red-500 px-5 sm:px-6 md:px-7 lg:px-8 font-medium py-2">DOWNLOAD
+                HERE</button>
         </section>
     </main>
 
+    <footer class="container mx-auto mt-20">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 bg-indigo-900 p-12 text-white">
+            <div class="flex flex-col justify-center items-center text-center">
+                <p class="font-bold text-sm">LOCATION</p>
+                <div class="text-slate-400 text-xs mt-2.5">
+                    <p class="mb-0.5">3481 Melrose Place</p>
+                    <p>Beverly Hills, CA go210</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center text-center my-8">
+                <p class="font-bold text-sm">SHARE WITH LOVE</p>
+                <div class="mt-2">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f border p-1.5"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter border p-1.5"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin border p-1.5"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center text-center">
+                <p class="font-bold text-sm">ABOUT US</p>
+                <p class="text-slate-400 text-xs mt-2.5 leading-5">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Aspernatur totam eos omnis nihil quibusdam
+                    quos quisquam accusamus. Voluptatem, ullam provident.</p>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center text-center bg-indigo-950 p-3 text-slate-400">
+            <p class="text-xs mt-2.5">Copyright © 2015, All Rights Reserved</p>
+            <p class="text-xs mt-2.5">Made with <i class="fa-solid fa-heart text-red-600"></i> by <a
+                    class="underline text-blue-600" target="_blank" href="https://github.com/MdMahfujHasan">Munna</a>
+            </p>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/'1.6.5'/flowbite.min.js"></script>
     <script src="app.js"></script>
 </body>
